@@ -19,7 +19,7 @@ class Janta extends Component {
   }
   render() {
     return (
-      <View>
+      <View >
         <Text style={appStyles.header}>Hoje você vai jantar:</Text>
         <Text style={appStyles.text}>{this.state.comida}</Text>
       </View>
@@ -31,8 +31,11 @@ class Janta extends Component {
 export default class App extends Component {
   render() {
     return (
-      <View style={{paddingTop:20}}>
+      <View style={appStyles.headerTop}>
         <Janta comida='Cuscuz' />
+        <View style={appStyles.quadrado1}></View>
+        <View style={appStyles.quadrado2}></View>
+        <View style={appStyles.quadrado3}></View>
       </View>
     );
   }
