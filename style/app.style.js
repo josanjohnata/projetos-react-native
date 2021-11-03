@@ -12,4 +12,4 @@ export const appStyles = StyleSheet.create({
     fontSize: 20,
     color: 'blue'
   }
-})
+});
