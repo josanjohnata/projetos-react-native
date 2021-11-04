@@ -1,31 +1,26 @@
 import { StyleSheet } from 'react-native';
 
 export const appStyles = StyleSheet.create({
-  headerTop: {
+  header: {
     flex: 1,
     backgroundColor: 'pink',
-  },
-  header: {
-    textAlign: 'center',
-    fontWeight: 'bold',
-    fontSize: 20,
-    color: 'red'
-  },
-  text: {
-    textAlign: 'center',
-    fontSize: 20,
-    color: 'blue'
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center'
   },
   quadrado1: {
-    flex: 1,
+    width: 50,
+    height: 50,
     backgroundColor: 'blue'
   },
   quadrado2: {
-    flex: 1,
+    width: 50,
+    height: 100,
     backgroundColor: 'purple'
   },
   quadrado3: {
-    flex: 1,
+    width: 50,
+    height: 200,
     backgroundColor: 'green'
   }
 });
