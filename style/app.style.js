@@ -2,11 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export const appStyles = StyleSheet.create({
   header: {
-    flex: 1,
-    backgroundColor: 'pink',
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    alignItems: 'center'
+    
   },
   quadrado1: {
     width: 50,
@@ -22,5 +18,17 @@ export const appStyles = StyleSheet.create({
     width: 50,
     height: 200,
     backgroundColor: 'green'
+  },
+  input: {
+    height: 40,
+    borderWidth: '5',
+    borderColor: '#000000',
+    margin: 10,
+    padding: 10,
+    backgroundColor: 'red'
+  },
+  text: {
+    fontSize: 20,
+    textAlign: 'center'
   }
 });
