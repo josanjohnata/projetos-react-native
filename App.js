@@ -5,29 +5,34 @@ import { appStyles } from "./style/app.style";
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {texto: ''};
+    this.state = {inputTexto: '', texto: ''};
 
-    this.changeText = this.changeText.bind(this);
+    this.apertouBotao = this.apertouBotao.bind(this);
   }
 
-  changeText(text) {
+  apertouBotao() {
     let result = this.state;
 
-    if(text.length > 0) {
-      result.texto = `Olá, ${text}`;
+    if(result.inputTexto === 'Josan') {
+      result.texto = 'Parabéns! Você acertou!';
     } else {
-      result.texto = '';
+      result.texto = 'Você errou! Tente novamente.'
     }
     this.setState(result);
-
   }
+
   render() {
     return (
       <View style={{padding: 30}}>
         <TextInput
           style={appStyles.input}
-          placeholder="Digite seu NOME?"
-          onChangeText={this.changeText}
+          placeholder="Adivinhe meu NOME?"
+          onChangeText={(inputTexto) => this.setState({inputTexto})}
+        />
+        <Button
+          title="Sou um Botão"
+          onPress={this.apertouBotao}
+          style={appStyles.button}
         />
         <Text
           style={appStyles.text}          

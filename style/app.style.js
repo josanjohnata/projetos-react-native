@@ -21,14 +21,19 @@ export const appStyles = StyleSheet.create({
   },
   input: {
     height: 40,
-    borderWidth: '5',
+    borderWidth: 1,
     borderColor: '#000000',
     margin: 10,
     padding: 10,
-    backgroundColor: 'red'
   },
   text: {
     fontSize: 20,
     textAlign: 'center'
+  },
+  button: {
+    height: 40,
+    margin: 20,
+    padding: 10,
+    toUpperCase: false,
   }
 });
