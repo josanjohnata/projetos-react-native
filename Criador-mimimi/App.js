@@ -5,7 +5,7 @@ import { appStyles } from "./src/style/app.style";
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { texto1: 'Texto 1', texto2: 'Texto 2' };
+    this.state = { texto1: 'Faça seu mimimi', texto2: '' };
 
     this.escrever = this.escrever.bind(this);
   }
